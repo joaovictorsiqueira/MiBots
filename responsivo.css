@@ -1,5 +1,10 @@
 @media(max-width: 1280px) {
 
+    .cabecalho-imagem {
+        width: 70px;
+        height: 70px;
+        padding: 0;
+    }
 
     .conteudo-principal {
         flex-direction: column;
@@ -44,32 +49,23 @@
 
 }
 
+
+
+
 @media(max-width: 520px) {
 
-    .cabecalho{
+    .cabecalho {
         display: flex;
-        justify-content: center;
-    }
+        justify-content: space-between;
+        padding: 12px 10px;
 
-    .cabecalho-menu {
-        gap: 5px;
-    }
-
-    .cabecalho-menu-item {
-        padding: 10px;
 
     }
-
-}
-
-
-@media(max-width: 420px) {
 
     .cabecalho-imagem {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         transition: 0.4s;
-
     }
 
     .cabecalho-menu {
@@ -78,16 +74,44 @@
 
     .cabecalho-menu-item {
         padding: 10px;
-        font-size: 11px;
+        font-size: 12px;
+
     }
 
+    .cabecalho-menu-item:hover {
+        color: #05665e;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1.1rem;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+
+    }
+
+    .conteudo-principal-escrito {
+        text-align: center;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        margin-top: 25px;
+        font-size: 80px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        position: relative;
+        padding: 0 10px;
+    }
 
     .conteudo-principal-escrito-subtitulo::before {
         content: attr(data-text);
         position: absolute;
         font-style: italic;
         color: white;
-        width: 260px;
+        width: 250px;
         white-space: nowrap;
         overflow: hidden;
         border-right: 2.5px solid white;
@@ -100,18 +124,154 @@
 
     @keyframes animarElemento {
 
-        0%,
+        /*0%,
         10%,
         100% {
-            width: 0;
+            width: 0px;
         }
 
         50%,
         85% {
             width: 250px;
+        }*/
+
+        0%,
+        10% {
+            width: 0px;
+        }
+
+        50%,
+        85% {
+            width: 241px;
+            border-right-width: 2.5px;
+            padding: 0 8px 0 0;
+            /* Para o cursos se afastar um pouco do texto*/
+        }
+
+        95%,
+        100% {
+            width: 0px;
+
         }
 
 
     }
+
+
+
+    .conteudo-principal-imagem {
+        width: 400px;
+        height: 400px;
+        margin: 53px 0;
+
+    }
+
+    .conteudo-secundario {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        gap: 0;
+    }
+
+    .conteudo-secundario-titulo {
+        text-align: center;
+        font-size: 22px;
+        padding: 18px 0 20px;
+        margin: 0;
+    }
+
+    .conteudo-secundario-paragrafo {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .titulo-card {
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 26px;
+    }
+
+    .subtitulo-card {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .card1 {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 250px;
+        height: 430px;
+        box-shadow: 13px 10px 20px rgba(0, 0, 0, 0.479);
+    }
+
+    .card1-imagem {
+        width: 230px;
+        height: 230px;
+    }
+
+    .card1-descrição{
+        display: flex;
+        justify-content: center;
+        text-align: center
+    }
+
+    .card2 {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 250px;
+        height: 430px;
+        box-shadow: 13px 10px 20px rgba(0, 0, 0, 0.479);
+    }
+
+    .card2-imagem {
+        width: 230px;
+        height: 230px;
+    }
+
+    .card2-descrição{
+        display: flex;
+        justify-content: center;
+        text-align: center
+    }
+
+    .card3 {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 250px;
+        height: 430px;
+        box-shadow: 13px 10px 20px rgba(0, 0, 0, 0.479);
+    }
+
+    .card3-imagem {
+        width: 230px;
+        height: 230px;
+    }
+
+    .card3-descrição{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 28px 20px ;
+        
+    }
+
+    .rodape{
+        padding: 20px; 
+    }
+
+    .rodape-imagem{
+        width: 300px;     
+          
+    }
+
 
 }
